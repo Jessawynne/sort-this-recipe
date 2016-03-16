@@ -1,0 +1,25 @@
+{
+  "name": "sort-this-recipe",
+  "description": "An app for sorting recipes with multiple filters",
+  "main": "server.js",
+  "authors": [
+    "Jessawynne Parker <jessawynne@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Jessawynne/sort-this-recipe",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.1",
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.1",
+    "angular-ui-router": "^0.2.18"
+  }
+}
