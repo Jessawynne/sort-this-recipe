@@ -1,0 +1,21 @@
+<h1>Sort This Recipe</h1>
+<div class='row'>
+  <h2>Filter more than 330K recipes. Click on <i class='fa fa-cutlery'></i> to add recipes to your virtual cookbook.</h2>
+
+  <!-- Add category filter here -->
+  <div ng-controller='dashboardCtrl'>
+    <div ng-repeat='category in categories'>
+      <label class='checkbox' for='{{category.id}}'>
+        <input type='checkbox' ng-model='selection.ids[category.id]' name='group' id='{{category.id}}' />
+        {{category.name}}
+      </label>
+    </div>
+    <pre ng-bind='selection.ids | json'></pre>
+  </div>
+
+  <!-- Add ingredient filter here -->
+  <i class="fa fa-search-minus"></i>
+  <!-- Add search bar here -->
+  <i class="fa fa-search"></i>
+
+</div>
